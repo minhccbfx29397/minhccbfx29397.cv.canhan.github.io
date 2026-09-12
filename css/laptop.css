@@ -1,0 +1,386 @@
+/* laptop */
+@media (min-width: 992px) {
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* banner */
+  .container-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .container-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-text {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .banner-texts {
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  /* nav */
+  .container-nav {
+    border-top: 1px solid #dfdbdb;
+    border-bottom: 1px solid #dfdbdb;
+    background: white;
+   
+
+  }
+
+
+  .container-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 20px;
+    text-align: center;
+    border-right: 1px solid #dfdbdb;
+  
+  }
+
+  .container-nav a:hover {
+    background: #f5f5f5;
+  }
+
+  .container-nav i {
+    color: #0e74e9;
+  }
+
+  .active {
+    border-left: 1px solid #dfdbdb;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .name2 {
+    font-size: 12px;
+    color: #a0a2a3;
+  }
+
+  /* mục 2 */
+  .nghe {
+    padding: 50px;
+    background-color: #f5f5f5;
+  }
+
+  .nghe p {
+    color: #898a8b;
+    line-height: 1.6;
+  }
+
+  .thongtin {
+    padding: 50px;
+    background-color: #eceef0;
+  }
+
+  .thongtin .form-control {
+    max-width: 400px;
+  }
+
+  /* mục 3 - 6 cột */
+
+  .muc3 button {
+    display: none;
+  }
+  .muc3 {
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .thongtin2 {
+    border: 1px solid #e2dede;
+    padding: 15px;
+    background: white;
+    transition: box-shadow 0.3s;
+    height: 100%;
+  }
+
+  .thongtin2:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .noidungchinh h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+   
+    padding-bottom: 8px;
+  }
+
+  .noidungchinh h3 i {
+    margin-left: 8px;
+    font-size: 16px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .daucham {
+    width: 8px;
+    height: 8px;
+    background-color: #0099cc;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  .hientai {
+    background-color: #00a8e8;
+    color: white;
+    padding: 2px 12px;
+    font-size: 12px;
+    border-radius: 12px;
+    display: inline-block;
+  }
+
+  .noidung {
+    margin-left: 20px;
+    margin-top: 3px;
+    color: #666;
+    font-size: 13px;
+  }
+
+  /* sở thích */
+  .noidung2 i {
+    font-size: 24px;
+    color: #0099cc;
+  }
+
+  .noidung3 p {
+    font-size: 12px;
+    color: #555;
+  }
+
+  /* thanh kỹ năng */
+  .spam {
+    width: 40px;
+    height: 3px;
+    border-top: 3px solid #898a8b;
+    display: inline-block;
+  }
+
+  #spam1 {
+    border-top: 3px solid #0099cc;
+  }
+
+  /* mục 4 - chứng chỉ */
+  .muc4 {
+    background-color: #e0e1e2;
+    padding: 50px 0;
+    margin-top: 50px;
+  }
+
+  .giaithuong1 h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .noidungcacgiai {
+    border-bottom: 1px solid #d1b53a;
+    padding-bottom: 30px;
+  }
+
+  .giai2{
+    border-left:1px solid #d1b53a ;
+    padding-left: 20px;
+  }
+
+  .giai1,
+  .giai2,
+  .giai3 {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .giai1 img,
+  .giai2 img,
+  .giai3 img {
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .noidunggiaithuong1 {
+    flex: 1;
+  }
+
+  .noidunggiaithuong3 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .noidunggiaithuong2 {
+    color: #898a8b;
+    font-size: 14px;
+    margin: 3px 0;
+  }
+
+  .noidungcacgiai2 {
+    margin-top: 30px;
+  }
+
+  .giai3 {
+    max-width: 600px;
+  }
+
+  /* mục 5 - dự án */
+  .muc5 {
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .muc5 h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+   
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+
+  .duan1,
+  .duan2,
+  .duan3 {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+  }
+
+  .duan1:hover,
+  .duan2:hover,
+  .duan3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .duan1 img,
+  .duan2 img,
+  .duan3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .moidungchinhmuc5 {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 12px 16px;
+  }
+
+  #cv h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 0;
+  }
+
+  #noidungchinhmuc51 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nam {
+    background-color: #00a8e8;
+    color: white;
+    padding: 4px 14px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+
+  .spam1 {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .spam1 i {
+    margin-right: 6px;
+    color: #00a8e8;
+  }
+
+  .row-detail {
+    display: flex;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .row-detail:last-child {
+    border-bottom: none;
+  }
+
+  .label,
+  .labe,
+  .lab {
+    width: 85px;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .row-detail div:last-child {
+    flex: 1;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* mục 6 - footer */
+  .muc6 {
+    background-color: #f3f8fa;
+    padding: 40px 0;
+    margin-top: 50px;
+  }
+
+  .icon i {
+    width: 40px;
+    height: 40px;
+    background: #00a8e8;
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: transform 0.3s, background 0.3s;
+  }
+
+  .icon i:hover {
+    transform: scale(1.1);
+    background: #0088b8;
+  }
+
+  .logo2 {
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .logo2:hover {
+    color: #00a8e8;
+  }
+}

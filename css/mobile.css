@@ -1,0 +1,416 @@
+/* mobile */
+@media (max-width: 767px) {
+  /* banner */
+  .banner-text {
+    font-size: 18px;
+    top: 45%;
+  }
+
+  .banner-texts {
+    font-size: 11px;
+    top: 55%;
+  }
+
+  .container-nav .row {
+    flex-direction: column;
+  }
+
+  .container-nav .col-2,
+  .container-nav .col-4 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-right: none !important;
+  }
+
+  .container-nav .col-2:last-child,
+  .container-nav .col-4:last-child {
+    border-bottom: none;
+  }
+
+  .container-nav a {
+    padding: 10px 16px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-right: none !important;
+    color: #000;
+  }
+
+  .container-nav i {
+    color: #559ff5;
+    width: 20px;
+  }
+
+  .active {
+    border-left: none !important;
+  }
+
+  .col-4 {
+    display: none;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
+  }
+
+  .name2 {
+    font-size: 11px;
+    color: #a0a2a3;
+    display: none;
+  }
+
+  /* mục 2 - 1 cột */
+  .muc2 .row {
+    flex-direction: column;
+  }
+
+  .muc2 .col-12 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .nghe {
+    padding: 25px 16px;
+    background-color: #f5f5f5;
+  }
+
+  .nghe p {
+    color: #898a8b;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+
+  .muctieu h2 {
+    font-size: 20px;
+  }
+
+  .thongtin {
+    padding: 25px 16px;
+    background-color: #eceef0;
+  }
+
+  .thongtin .form-control {
+    max-width: 100% !important;
+  }
+
+  /* mục 3 - 1 cột */
+  .muc3 button {
+    display: none;
+  }
+  .muc3 {
+    margin: 30px auto;
+    padding: 0 12px;
+  }
+
+  .muc3 .col-12 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .thongtin2 {
+    border: 1px solid #e2dede;
+    padding: 12px;
+    background: white;
+    height: 100%;
+  }
+
+  .noidungchinh h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+
+    padding-bottom: 6px;
+  }
+
+  .noidungchinh h3 i {
+    margin-left: 6px;
+    font-size: 14px;
+    color: white;
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+
+  .daucham {
+    width: 7px;
+    height: 7px;
+    background-color: #0099cc;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .noidung {
+    margin-left: 16px;
+    margin-top: 3px;
+    color: #666;
+    font-size: 13px;
+  }
+
+  /* sở thích */
+  .noidung2 {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 12px 0;
+  }
+
+  .noidung2 i {
+    font-size: 20px;
+    color: #0099cc;
+  }
+
+  .noidung3 {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .noidung3 p {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+  }
+
+  .noidung4 {
+    display: flex;
+    gap: 5px;
+    margin: 4px 0 8px 0;
+  }
+
+  /* thanh kỹ năng */
+  .spam {
+    width: 30px;
+    height: 3px;
+    border-top: 3px solid #898a8b;
+    display: inline-block;
+  }
+
+  #spam1 {
+    border-top: 3px solid #0099cc;
+  }
+
+  /* mục 4 - chứng chỉ 1 cột */
+  .muc4 {
+    background-color: #e0e1e2;
+    padding: 30px 0;
+    margin-top: 30px;
+  }
+
+  .giaithuong1 h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .muc4 .col-12 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .noidungcacgiai {
+    padding-bottom: 20px;
+  }
+
+  .giai1,
+  .giai2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid red;
+    margin-bottom: 15px;
+  }
+
+  .giai1 img,
+  .giai2 img {
+    border-radius: 8px;
+    width: 130px;
+    height: auto;
+  }
+
+  .noidunggiaithuong1 {
+    text-align: center;
+  }
+
+  .noidunggiaithuong3 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .noidunggiaithuong2 {
+    color: #898a8b;
+    font-size: 12px;
+    margin: 2px 0;
+  }
+
+  .noidungcacgiai2 {
+    margin-top: 20px;
+  }
+
+  .giai3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid red;
+    padding-bottom: 15px;
+  }
+
+  .giai3 img {
+    border-radius: 8px;
+    width: 130px;
+    height: auto;
+  }
+
+  /* mục 5 - dự án 1 cột */
+  .muc5 {
+    margin: 30px auto;
+    padding: 0 12px;
+  }
+
+  .muc5 h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+    padding-bottom: 8px;
+    display: inline-block;
+  }
+
+  .muc5 .col-12 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .duan1,
+  .duan2,
+  .duan3 {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    height: 100%;
+  }
+
+  .duan1 img,
+  .duan2 img,
+  .duan3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .moidungchinhmuc5 {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 10px 12px;
+  }
+
+  #cv h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding: 6px 0;
+  }
+
+  #noidungchinhmuc51 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nam {
+    background-color: #00a8e8;
+    color: white;
+    padding: 3px 12px;
+    font-size: 11px;
+    border-radius: 20px;
+  }
+
+  .spam1 {
+    font-size: 13px;
+    color: #555;
+  }
+
+  .spam1 i {
+    margin-right: 5px;
+    color: #00a8e8;
+  }
+
+  .row-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .row-detail:last-child {
+    border-bottom: none;
+  }
+
+  .label,
+  .labe,
+  .lab {
+    width: 100%;
+    font-weight: 600;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 3px;
+  }
+
+  .row-detail div:last-child {
+    flex: 1;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* mục 6 - footer 1 cột */
+  .muc6 {
+    background-color: #f3f8fa;
+    padding: 25px 0;
+    margin-top: 30px;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0 12px;
+  }
+
+  .icon i {
+    width: 32px;
+    height: 32px;
+    background: #00a8e8;
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-right: 8px;
+  }
+
+  .logo2 {
+    font-size: 14px;
+    color: #555;
+  }
+}
