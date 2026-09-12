@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="script.js" />
+
+    <title>Assignment03</title>
+  </head>
+
+  <body>
+    <!-- banner -->
+    <div class="container-fluid p-0 position-relative container-banner">
+      <img src="images/banner.jpg" alt="banner" class="w-100" />
+      <div
+        class="position-absolute top-50 start-50 translate-middle text-white text-center"
+      >
+        <div class="banner-text">Cao Cự Bình Minh</div>
+        <div class="banner-texts">Full Stack developer</div>
+      </div>
+    </div>
+
+    <!-- nav -->
+    <nav class="container-nav">
+      <div class="row g-0 align-items-center justify-content-center">
+        <div class="col-2 col-md-2 col-lg-2 text-center border-end">
+          <a class="active d-block py-2" href="#infor"
+            ><i class="fa fa-user"></i> Thông Tin</a
+          >
+        </div>
+        <div class="col-2 col-md-2 col-lg-2 text-center border-end">
+          <a class="d-block py-2" href="#lylich"
+            ><i class="fa fa-file-text"></i> Lý Lịch</a
+          >
+        </div>
+        <div
+          class="col-4 col-md-4 col-lg-4 text-center border-end py-2 nav-name"
+        >
+          <div class="name">Cao Cự Bình Minh</div>
+          <div class="name2">Full Stack developer</div>
+        </div>
+        <div class="col-2 col-md-2 col-lg-2 text-center border-end">
+          <a class="d-block py-2" href="#chungchi"
+            ><i class="fa fa-envelope"></i> Chứng Chỉ</a
+          >
+        </div>
+        <div class="col-2 col-md-2 col-lg-2 text-center">
+          <a class="d-block py-2" href="#duan"
+            ><i class="fa fa-star"></i> Dự Án</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- mục tiêu nghề nghiệp và thông tin cá nhân -->
+    <div class="container-fluid muc2 px-0">
+      <div class="row g-0">
+        <div class="col-12 col-md-6 nghe p-4 p-md-5">
+          <h2 class="muctieu">Mục tiêu nghề nghiệp</h2>
+          <p class="muctieu">
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí Fullstack
+            Developer, có thế vận dụng những kiến thức đã được trau dồi và không
+            ngừng học hỏi để phát triển bản thân, cũng như hoàn thành tốt nhất
+            công việc được giao.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 thongtin p-4 p-md-5">
+          <h2 class="muctieu">Thông tin cá nhân</h2>
+          <div class="mb-3">
+           <form id="form-thongtincanhan" autocomplete="on">
+             <input id="input-thongtincanhan"
+              type="text"
+              class="form-control"
+              placeholder="Enter email"
+              style="max-width: 400px"
+            />
+          </div>
+          <p>Hãy nhập email để xác thực</p>
+          <button id="button-thongtincanhan" type="submit" class="btn btn-primary">submit</button>
+           </form>
+          <div class="about-col d-none" id="container-thongtincanhan">
+            <div class="info-list ">
+              <p><strong>Giới tính :</strong> Nam</p>
+              <p><strong>Ngày sinh :</strong> 18/06/2011</p>
+              <p><strong>Điện thoại :</strong> (+84) 912398xxx</p>
+              <p><strong>Email :</strong> minhccbFX29397@funix.edu.vn</p>
+              <p><strong>Địa chỉ :</strong> Thôn Tân Bình, Xã minh Châu , Tỉnh Nghệ An</p>
+              <p><strong>Website :</strong> https://abc.tech</p>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- kinh nghiệm, học vấn, hoạt động -->
+    <div class="container muc3 my-5" >
+      <div class="row g-4">
+        <!-- thẻ card kinh nghiệm -->
+        <div class="col-12 col-md-6 col-lg-4" id="kinhnghiem">
+          <div class="thongtin2 p-3 h-100">
+            <div class="noidungchinh ">
+              <h3>
+                Kinh nghiệm
+                <i class="fa fa-briefcase"></i>
+              </h3>
+              <button
+                
+                class="btn btn-warning rounded-pill  " 
+                style="background-color: #fff3a3"
+                id="noidungkinhnghiem"
+               
+              >
+                ▼ View Lesson
+              </button>
+
+              <div
+                id="noidungchinhkinhnghiem"
+                style="display: none; margin-top: 20px"
+              >
+                <div>
+                  <span class="daucham"></span>8/2026 -
+                  <span class="hientai">hiện tại</span>
+                </div>
+                <p class="noidung">- Chưa có kinh nghiệm làm việc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- thẻ card học vấn -->
+        <div class="col-12 col-md-6 col-lg-4" id="hocvan">
+          <div class="thongtin2 p-3 h-100">
+            <div class="noidungchinh">
+              <h3>Học vấn <i class="fa fa-pencil"></i></h3>
+              <button
+                class="btn btn-warning rounded-pill "
+                style="background-color: #fff3a3"
+                id="noidunghocvan"
+              >
+                ▼ View Lesson
+              </button>
+              <div
+                id="noidungchinhhocvan"
+                style="display: none; margin-top: 20px"
+              >
+                <div><span class="daucham"></span><strong>FUNiX</strong></div>
+                <div class="noidung">08/2026</div>
+                <p class="noidung">- Chưa tốt nghiệp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- thẻ card hoạt động -->
+        <div class="col-12 col-md-6 col-lg-4" id="hoatdong">
+          <div class="thongtin2 p-3 h-100">
+            <div class="noidungchinh">
+              <h3>
+                Hoạt động
+                <i class="fa fa-briefcase"></i>
+              </h3>
+              <button
+                class="btn btn-warning rounded-pill"
+                style="background-color: #fff3a3"
+                id="noidunghoatdong"
+              >
+                ▼ View Lesson
+              </button>
+              <div
+                id="noidungchinhhoatdong"
+                style="display: none; margin-top: 20px"
+              >
+                <div>
+                  <span class="daucham"></span
+                  ><strong>Câu lạc bộ THCS DIỄN CÁT</strong>
+                </div>
+                <div class="noidung">08/2026</div>
+                <p class="noidung">- Trưởng câu lạc bộ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- thẻ card sở thích -->
+        <div class="col-12 col-md-6 col-lg-4" id="sothich">
+          <div class="thongtin2 p-3 h-100">
+            <div class="noidungchinh">
+              <h3>Sở thích <i class="fa fa-binoculars"></i></h3>
+              <button
+                class="btn btn-warning rounded-pill"
+                style="background-color: #fff3a3"
+                id="noidungsothich"
+              >
+                ▼ View Lesson
+              </button>
+              <div
+                id="noidungchinhsothich"
+                style="display: none; margin-top: 20px"
+              >
+                <div class="noidung2 d-flex justify-content-center gap-3 my-2">
+                  <i class="fa fa-futbol-o"></i>
+                  <i class="fa fa-car"></i>
+                  <i class="fa fa-bicycle"></i>
+                  <i class="fa fa-cart-arrow-down"></i>
+                </div>
+                <div
+                  class="noidung3 d-flex justify-content-center gap-3 flex-wrap"
+                >
+                  <p class="m-0">Đá bóng</p>
+                  <p class="m-0">Đi chơi</p>
+                  <p class="m-0">Đạp xe</p>
+                  <p class="m-0">Mua sắm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- thẻ card ngôn ngữ -->
+        <div class="col-12 col-md-6 col-lg-4" id="ngonngu">
+          <div class="thongtin2 p-3 h-100">
+            <div class="noidungchinh">
+              <h3>Ngôn Ngữ</h3>
+              <button
+                class="btn btn-warning rounded-pill"
+                style="background-color: #fff3a3"
+                id="noidungngonngu"
+              >
+                ▼ View Lesson
+              </button>
+              <div
+                id="noidungchinhngonngu"
+                style="display: none; margin-top: 20px"
+              >
+                <p class="mb-1"><strong>Tiếng Anh - IELTS 7.0</strong></p>
+                <div class="noidung4 d-flex gap-1 mb-2">
+                  <span class="spam" id="spam1"></span>
+                  <span class="spam"></span>
+                  <span class="spam"></span>
+                </div>
+                <p class="mb-1"><strong>Tiếng Nhật - JLPT N4</strong></p>
+                <div class="noidung4 d-flex gap-1">
+                  <span class="spam"></span>
+                  <span class="spam"></span>
+                  <span class="spam"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- thẻ card kĩ năng -->
+        <div class="col-12 col-md-6 col-lg-4" id="kinang">
+          <div class="thongtin2 p-3 h-100">
+            <div class="noidungchinh">
+              <h3>Kĩ năng</h3>
+              <button
+                class="btn btn-warning rounded-pill"
+                style="background-color: #fff3a3"
+                id="noidungkinang"
+              >
+                ▼ View Lesson
+              </button>
+              <div
+                id="noidungchinhkinang1"
+                style="display: none; margin-top: 20px"
+              >
+                <p class="mb-1"><strong>HTML/CSS: Fundamental</strong></p>
+                <div class="noidung4 d-flex gap-1 mb-2">
+                  <span class="spam" id="spam1"></span>
+                  <span class="spam"></span>
+                  <span class="spam"></span>
+                </div>
+                <p class="mb-1"><strong>Javascript: Intermediate</strong></p>
+                <div class="noidung4 d-flex gap-1 mb-2">
+                  <span class="spam"></span>
+                  <span class="spam"></span>
+                  <span class="spam"></span>
+                </div>
+                <p class="mb-1"><strong>NodeJS: Intermediate</strong></p>
+                <div class="noidung4 d-flex gap-1 mb-2">
+                  <span class="spam"></span>
+                  <span class="spam"></span>
+                  <span class="spam"></span>
+                </div>
+                <p class="mb-1"><strong>Bootstrap 5: Fundamental</strong></p>
+                <div class="noidung4 d-flex gap-1">
+                  <span class="spam"></span>
+                  <span class="spam"></span>
+                  <span class="spam"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- chứng chỉ và giải thưởng -->
+    <div class="muc4 py-5">
+      <div class="container giaithuong1">
+        <h2 class="mb-4">Chứng chỉ - Giải thưởng</h2>
+        <div class="row g-4 noidungcacgiai">
+          <!-- thẻ card chứng chỉ -->
+          <div class="col-12 col-md-6">
+            <div class="giai1 d-flex gap-3 align-items-start">
+              <img
+                class="anh1"
+                src="images/Cert_DBI.png"
+                alt="bằng khen"
+                width="175px"
+                height="100px"
+              />
+              <div class="noidunggiaithuong1">
+                <p class="noidunggiaithuong3">
+                  CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX
+                </p>
+                <p class="noidunggiaithuong2">
+                  - Chứng chỉ thuộc chương trình CCDN
+                </p>
+                <p class="noidunggiaithuong2">- GPA: 8.6</p>
+              </div>
+            </div>
+          </div>
+          <!-- thẻ card giải thưởng -->
+          <div class="col-12 col-md-6">
+            <div class="giai2 d-flex gap-3 align-items-start">
+              <img
+                src="images/Cert_PRF.png"
+                alt="bằng khen"
+                width="175px"
+                height="100px"
+              />
+              <div class="noidunggiaithuong1" id="noidunggiai23">
+                <p class="noidunggiaithuong3">
+                  CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX
+                </p>
+                <p class="noidunggiaithuong2">
+                  - Chứng chỉ thuộc chương trình CCDN
+                </p>
+                <p class="noidunggiaithuong2">- GPA: 8.9</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 noidungcacgiai2">
+          <div class="col-12 col-md-6">
+            <div class="giai3 d-flex gap-3 align-items-start">
+              <img src="images/Cert_WEB.png" alt="bằng khen" width="175px" />
+              <div class="noidunggiaithuong1" id="noidunggiai23">
+                <p class="noidunggiaithuong3">
+                  CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX
+                </p>
+                <p class="noidunggiaithuong2">
+                  - Chứng chỉ thuộc chương trình CCDN
+                </p>
+                <p class="noidunggiaithuong2">- GPA: 8.0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- dự án -->
+    <div class="container muc5 my-5">
+      <h2 class="d-inline-block">Dự án</h2>
+      <div class="row g-4 mt-2">
+        <!-- dự án 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="duan1 border rounded overflow-hidden h-100">
+            <img src="images/project_1.png" alt="duan1" class="w-100" />
+            <div class="moidungchinhmuc5 p-3 border-top" id="cv">
+              <h2 class="fs-5 fw-bold">CV CÁ NHÂN</h2>
+            </div>
+            <div class="moidungchinhmuc5 p-3 border-top">
+              <div id="noidungchinhmuc51" class="d-flex flex-wrap gap-2">
+                <span class="nam bg-primary text-white px-3 py-1 rounded-pill"
+                  >2021</span
+                >
+                <span class="spam1"
+                  ><i class="fa fa-user text-primary"></i> FUNIX</span
+                >
+                <span class="spam1"
+                  ><i class="fa fa-lightbulb-o text-primary"></i>
+                  Developer</span
+                >
+              </div>
+            </div>
+            <div class="moidungchinhmuc5 p-3 border-top">
+              <div class="row-detail py-2 border-bottom">
+                <div class="label fw-bold">Mô tả</div>
+                <div>
+                  Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
+                  như kỹ năng nghề nghiệp.
+                </div>
+              </div>
+              <div class="row-detail py-2 border-bottom">
+                <div class="labe fw-bold">Nhiệm vụ</div>
+                <div>
+                  - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                </div>
+              </div>
+              <div class="row-detail py-2">
+                <div class="lab fw-bold">Công nghệ</div>
+                <div class="congnghe">- HTML, CSS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- dự án 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="duan2 border rounded overflow-hidden h-100">
+            <img src="images/project_2.png" alt="duan2" class="w-100" />
+            <div class="moidungchinhmuc5 p-3 border-top" id="cv">
+              <h2 class="fs-5 fw-bold">TRANG WEB QUẢN LÍ THÚ CƯNG</h2>
+            </div>
+            <div class="moidungchinhmuc5 p-3 border-top">
+              <div id="noidungchinhmuc51" class="d-flex flex-wrap gap-2">
+                <span class="nam bg-primary text-white px-3 py-1 rounded-pill"
+                  >2021</span
+                >
+                <span class="spam1"
+                  ><i class="fa fa-user text-primary"></i> FUNIX</span
+                >
+                <span class="spam1"
+                  ><i class="fa fa-lightbulb-o text-primary"></i>
+                  Developer</span
+                >
+              </div>
+            </div>
+            <div class="moidungchinhmuc5 p-3 border-top">
+              <div class="row-detail py-2 border-bottom">
+                <div class="label fw-bold">Mô tả</div>
+                <div>
+                  Ứng dụng quản lí các thông tin của thú cưng như: cân nặng,
+                  tình trạng tiêm chủng,... Bao gồm các chức năng thêm/sửa/xóa
+                </div>
+              </div>
+              <div class="row-detail py-2 border-bottom">
+                <div class="labe fw-bold">Nhiệm vụ</div>
+                <div>
+                  - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                </div>
+              </div>
+              <div class="row-detail py-2">
+                <div class="lab fw-bold">Công nghệ</div>
+                <div class="congnghe2">- HTML, CSS, Javascript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- dự án 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="duan3 border rounded overflow-hidden h-100">
+            <img src="images/project_3.png" alt="duan3" class="w-100" />
+            <div class="moidungchinhmuc5 p-3 border-top" id="cv">
+              <h2 class="fs-5 fw-bold">TRANG WEB XEM TIN TỨC</h2>
+            </div>
+            <div class="moidungchinhmuc5 p-3 border-top">
+              <div id="noidungchinhmuc51" class="d-flex flex-wrap gap-2">
+                <span class="nam bg-primary text-white px-3 py-1 rounded-pill"
+                  >2021</span
+                >
+                <span class="spam1"
+                  ><i class="fa fa-user text-primary"></i> FUNIX</span
+                >
+                <span class="spam1"
+                  ><i class="fa fa-lightbulb-o text-primary"></i>
+                  Developer</span
+                >
+              </div>
+            </div>
+            <div class="moidungchinhmuc5 p-3 border-top">
+              <div class="row-detail py-2 border-bottom">
+                <div class="label fw-bold">Mô tả</div>
+                <div>
+                  Trang Web xem tin tức nhiều nguồn khác nhau, người dùng có thể
+                  tìm các tin tức dựa theo từ khóa.
+                </div>
+              </div>
+              <div class="row-detail py-2 border-bottom">
+                <div class="labe fw-bold">Nhiệm vụ</div>
+                <div>
+                  - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                </div>
+              </div>
+              <div class="row-detail py-2">
+                <div class="lab fw-bold">Công nghệ</div>
+                <div class="congnghe2">- HTML, CSS, Javascript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="muc6 py-4">
+      <div class="container">
+        <div class="icon d-flex justify-content-center gap-4 flex-wrap">
+          <span class="logo2"><i class="fa fa-facebook"></i> Facebook</span>
+          <span class="logo2"><i class="fa fa-linkedin"></i> Linkedin</span>
+          <span class="logo2"><i class="fa fa-github"></i> Github</span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
